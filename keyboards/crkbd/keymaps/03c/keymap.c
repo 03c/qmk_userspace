@@ -2,8 +2,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 #include QMK_KEYBOARD_H
 
-#include "keymap_uk.h"
-
 enum custom_keycodes { QWERTY = SAFE_RANGE, LOWER, RAISE, FUNC, BACKLIT };
 
 enum combos { DF_DASH, JK_ESC };
@@ -55,11 +53,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[_QWERTY] = LAYOUT
 
                                                               [_LOWER] = LAYOUT(
                                                                   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-                                                                  _______, KC_EXLM, UK_AT, UK_HASH, KC_DLR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, _______,
+                                                                  _______, KC_EXLM, S(KC_QUOT), KC_NUHS, KC_DLR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, _______,
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
                                                                   _______, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, _______,
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-                                                                  _______, UK_DQUO, UK_TILD, KC_GRV, KC_LBRC, KC_LCBR, KC_RCBR, KC_RBRC, KC_COMM, KC_DOT, KC_SLSH, _______,
+                                                                  _______, S(KC_2), S(KC_NUHS), KC_GRV, KC_LBRC, KC_LCBR, KC_RCBR, KC_RBRC, KC_COMM, KC_DOT, KC_SLSH, _______,
                                                                   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                                                   KC_TRNS, KC_TRNS, LOWER, KC_TRNS, KC_TRNS, KC_COLON
                                                                   //`--------------------------'  `--------------------------'

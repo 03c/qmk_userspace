@@ -41,7 +41,7 @@ enum custom_layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[_QWERTY] = LAYOUT(
                                                                   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-                                                                  KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_DEL,
+                                                                  CTL_ESC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_DEL,
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
                                                                   OSM(MOD_LALT), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_QUOT, OSM_AGR,
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
@@ -65,13 +65,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[_QWERTY] = LAYOUT
 
                                                               [_RAISE] = LAYOUT(
                                                                   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-                                                                  _______, KC_DEL, XXXXXXX, KC_UNDS, KC_PLUS, KC_PGUP, XXXXXXX, XXXXXXX, XXXXXXX, KC_NUBS, S(KC_NUBS), _______,
+                                                                  _______, XXXXXXX, XXXXXXX, KC_UNDS, KC_PLUS, KC_PGUP, XXXXXXX, XXXXXXX, XXXXXXX, KC_NUBS, S(KC_NUBS), _______,
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
                                                                   _______, KC_HOME, KC_END, KC_MINS, KC_EQL, KC_PGDN, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_APP, _______,
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
                                                                   _______, KC_LT, KC_GT, KC_COPY, KC_PSTE, KC_SCLN, KC_MPLY, KC_MPRV, KC_MNXT, KC_VOLD, KC_VOLU, _______,
                                                                   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                                                  CTL_ESC, KC_TRNS, XXXXXXX, RAISE, KC_TRNS, KC_TRNS //`--------------------------'  `--------------------------'
+                                                                  _______, KC_TRNS, XXXXXXX, RAISE, KC_TRNS, KC_TRNS //`--------------------------'  `--------------------------'
                                                                   ),
 
                                                               [_FUNC] = LAYOUT(
